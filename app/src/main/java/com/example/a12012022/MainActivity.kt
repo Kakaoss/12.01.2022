@@ -55,5 +55,17 @@ class MainActivity : AppCompatActivity() {
                 findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.tfusmiiech);
             }
         }
+
+        findViewById<Button>(R.id.btnObrotLewo).setOnClickListener {
+
+            var rotacja = "-" + findViewById<EditText>(R.id.Dane1).text;
+            findViewById<ImageView>(R.id.imageView).rotation = rotacja.toString().toFloat();
+        }
+
+        findViewById<Button>(R.id.btnObrotPrawo).setOnClickListener {
+
+            var rotacja = findViewById<EditText>(R.id.Dane1).text;
+            findViewById<ImageView>(R.id.imageView).rotation = rotacja.toString().toFloat();
+        }
     }
 }
