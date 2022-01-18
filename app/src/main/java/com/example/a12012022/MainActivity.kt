@@ -67,5 +67,13 @@ class MainActivity : AppCompatActivity() {
             var rotacja = findViewById<EditText>(R.id.Dane1).text;
             findViewById<ImageView>(R.id.imageView).rotation = rotacja.toString().toFloat();
         }
+
+        findViewById<Button>(R.id.btnSkala).setOnClickListener {
+
+            var skala = findViewById<EditText>(R.id.Dane2).text;
+            findViewById<ImageView>(R.id.imageView).scaleX = skala.toString().toFloat();
+            findViewById<ImageView>(R.id.imageView).scaleY = skala.toString().toFloat();
+        }
+
     }
 }
