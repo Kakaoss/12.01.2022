@@ -75,5 +75,10 @@ class MainActivity : AppCompatActivity() {
             findViewById<ImageView>(R.id.imageView).scaleY = skala.toString().toFloat();
         }
 
+        findViewById<Button>(R.id.btnPrzezroczystosc).setOnClickListener {
+
+            var przezrocystosc = findViewById<EditText>(R.id.Dane3).text;
+            findViewById<ImageView>(R.id.imageView).alpha = przezrocystosc.toString().toFloat();
+        }
     }
 }
